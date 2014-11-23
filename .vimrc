@@ -14,7 +14,7 @@ let g:vundle_default_git_proto = 'git'
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " disable cursor blink in gui
 set guicursor+=a:blinkon0
@@ -26,32 +26,32 @@ set cursorline
 let g:slime_target = "tmux"
 
 " bundles
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'jpalardy/vim-slime'
-Bundle 'vim-coffee-script'
-Bundle 'SirVer/ultisnips'
-Bundle 'ervandew/supertab'
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'Raimondi/delimitMate'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'airblade/vim-rooter'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'skwp/vim-easymotion'
-Bundle 'mileszs/ack.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'tpope/vim-markdown'
-Bundle 'nelstrom/vim-markdown-folding'
-Bundle 'tpope/vim-sleuth'
-Bundle 'mattn/zencoding-vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'saltstack/salt-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jpalardy/vim-slime'
+Plugin 'vim-coffee-script'
+Plugin 'SirVer/ultisnips'
+Plugin 'ervandew/supertab'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'Raimondi/delimitMate'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'airblade/vim-rooter'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'skwp/vim-easymotion'
+Plugin 'mileszs/ack.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-markdown'
+Plugin 'nelstrom/vim-markdown-folding'
+Plugin 'tpope/vim-sleuth'
+Plugin 'mattn/zencoding-vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'saltstack/salt-vim'
 
 " basic settings
 set hidden
