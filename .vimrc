@@ -27,12 +27,12 @@ let g:slime_target = "tmux"
 
 " bundles
 Plugin 'airblade/vim-rooter'
+Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
 Plugin 'jpalardy/vim-slime'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'mileszs/ack.vim'
 Plugin 'nelstrom/vim-markdown-folding'
