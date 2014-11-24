@@ -26,7 +26,6 @@ set cursorline
 let g:slime_target = "tmux"
 
 " bundles
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'jpalardy/vim-slime'
 Plugin 'vim-coffee-script'
 Plugin 'SirVer/ultisnips'
@@ -34,6 +33,7 @@ Plugin 'ervandew/supertab'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'Raimondi/delimitMate'
 Plugin 'kien/ctrlp.vim'
+Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
@@ -59,10 +59,10 @@ set backspace=indent,eol,start
 
 " set colorscheme
 set background=dark
-colorscheme solarized
+colorscheme base16-grayscale
+
 
 " powerline setup
-let g:Powerline_colorscheme="solarized256"
 let g:Powerline_symbols="fancy"
 if has("gui_macvim")
 	set guifont="Menlo\ for\ Powerline:h12"
