@@ -10,6 +10,8 @@
 !/.vim/bundle/vim-airline/**
 !/.vim/bundle/vim-pathogen
 !/.vim/bundle/vim-pathogen/**
+!/.vim/bundle/vim-repeat
+!/.vim/bundle/vim-repeat/**
 !/.vim/bundle/vim-surround
 !/.vim/bundle/vim-surround/**
 !/.vim/bundle/vim-unimpaired
