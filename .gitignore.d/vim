@@ -10,5 +10,7 @@
 !/.vim/bundle/vim-airline/**
 !/.vim/bundle/vim-pathogen
 !/.vim/bundle/vim-pathogen/**
+!/.vim/bundle/vim-surround
+!/.vim/bundle/vim-surround/**
 !/.vim/bundle/Vundle.vim
 !/.vimrc
