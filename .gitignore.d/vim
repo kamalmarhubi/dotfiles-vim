@@ -4,5 +4,7 @@
 !/.gitmodules
 !/.vim
 !/.vim/bundle
+!/.vim/bundle/vim-pathogen
+!/.vim/bundle/vim-pathogen/**
 !/.vim/bundle/Vundle.vim
 !/.vimrc
