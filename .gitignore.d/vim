@@ -12,5 +12,7 @@
 !/.vim/bundle/vim-pathogen/**
 !/.vim/bundle/vim-surround
 !/.vim/bundle/vim-surround/**
+!/.vim/bundle/vim-unimpaired
+!/.vim/bundle/vim-unimpaired/**
 !/.vim/bundle/Vundle.vim
 !/.vimrc
