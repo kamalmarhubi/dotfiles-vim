@@ -14,6 +14,8 @@
 !/.vim/bundle/vim-repeat/**
 !/.vim/bundle/vim-surround
 !/.vim/bundle/vim-surround/**
+!/.vim/bundle/vim-tmux-navigator
+!/.vim/bundle/vim-tmux-navigator/**
 !/.vim/bundle/vim-unimpaired
 !/.vim/bundle/vim-unimpaired/**
 !/.vim/bundle/Vundle.vim
