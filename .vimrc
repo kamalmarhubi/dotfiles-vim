@@ -24,6 +24,12 @@ set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-grayscale
 
+" I like C-k to be kill line, even in vim, so set these to use alt instead.
+nnoremap <silent> <esc>h :TmuxNavigateLeft<cr>
+nnoremap <silent> <esc>j :TmuxNavigateDown<cr>
+nnoremap <silent> <esc>k :TmuxNavigateUp<cr>
+nnoremap <silent> <esc>l :TmuxNavigateRight<cr>
+nnoremap <silent> <esc>\ :TmuxNavigatePrevious<cr>
 
 " powerline setup
 let g:Powerline_symbols="fancy"
