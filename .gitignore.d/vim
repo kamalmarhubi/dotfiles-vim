@@ -20,5 +20,4 @@
 !/.vim/bundle/vim-tmux-navigator/**
 !/.vim/bundle/vim-unimpaired
 !/.vim/bundle/vim-unimpaired/**
-!/.vim/bundle/Vundle.vim
 !/.vimrc
