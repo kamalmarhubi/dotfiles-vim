@@ -19,6 +19,10 @@ set cursorline
 set hidden
 set backspace=indent,eol,start
 
+" detectindent defaults
+let g:detectindent_preferred_expandtab = 1
+let g:detectindent_preferred_indent = 4
+
 " set colorscheme
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
