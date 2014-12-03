@@ -6,6 +6,8 @@
 !/.vim/bundle
 !/.vim/bundle/base16-vim
 !/.vim/bundle/base16-vim/**
+!/.vim/bundle/detectindent
+!/.vim/bundle/detectindent/**
 !/.vim/bundle/vim-airline
 !/.vim/bundle/vim-airline/**
 !/.vim/bundle/vim-pathogen
