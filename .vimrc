@@ -41,7 +41,7 @@ colorscheme base16-grayscale
 " This leads to the following silliness to tell vim to treat escape-prefixed
 " keys as meta-modified ones instead...
 for key in ["h","j","k","l","\\"]
-	exec "set <M-".key.">=\e".key
+    exec "set <M-".key.">=\e".key
 endfor
 
 " ...and then actually map the keys.
@@ -54,7 +54,7 @@ nnoremap <silent> <m-\> :TmuxNavigatePrevious<cr>
 " powerline setup
 let g:Powerline_symbols="fancy"
 if has("gui_macvim")
-	set guifont="Menlo\ for\ Powerline:h12"
+    set guifont="Menlo\ for\ Powerline:h12"
 endif
 
 " easymotion setup
