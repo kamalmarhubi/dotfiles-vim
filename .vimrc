@@ -23,6 +23,12 @@ set backspace=indent,eol,start
 let g:detectindent_preferred_expandtab = 1
 let g:detectindent_preferred_indent = 4
 
+" detectindent autocmd
+augroup detectindent
+    autocmd!
+    autocmd FileType * DetectIndent
+augroup END
+
 " set colorscheme
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
