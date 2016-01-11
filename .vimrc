@@ -8,7 +8,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'davidzchen/vim-bazel'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
@@ -33,23 +32,6 @@ set hidden
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-grayscale
-
-" Set up handy vim-tmux-navigator keys.  I like C-k to be kill line, even in
-" vim, so set these to use alt instead. Unfortunately terminal emulators, meta
-" keys, escape, text editors -- you know, computers.
-"
-" This leads to the following silliness to tell vim to treat escape-prefixed
-" keys as meta-modified ones instead...
-for key in ["h","j","k","l","\\"]
-    exec "set <M-".key.">=\e".key
-endfor
-
-" ...and then actually map the keys.
-nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <m-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <m-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <m-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <m-\> :TmuxNavigatePrevious<cr>
 
 " powerline setup
 let g:Powerline_symbols="fancy"
