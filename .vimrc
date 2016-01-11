@@ -9,10 +9,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ciaranm/detectindent'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
@@ -26,16 +26,6 @@ set cursorline
 
 " basic settings
 set hidden
-
-" detectindent defaults
-let g:detectindent_preferred_expandtab = 1
-let g:detectindent_preferred_indent = 4
-
-" detectindent autocmd
-augroup detectindent
-    autocmd!
-    autocmd FileType * DetectIndent
-augroup END
 
 " set colorscheme
 set background=dark
