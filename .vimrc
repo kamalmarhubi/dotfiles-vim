@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'davidzchen/vim-bazel'
+Plug 'rust-lang/rust.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-repeat'
