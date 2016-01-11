@@ -3,11 +3,22 @@
 " be iMproved 
 set nocompatible
 
-" pathogen setup
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'bling/vim-airline'
+Plug 'chriskempson/base16-vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ciaranm/detectindent'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+
+call plug#end()
 
 " disable cursor blink in gui
 set guicursor+=a:blinkon0
