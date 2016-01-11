@@ -3,6 +3,8 @@
 !/.gitignore.d/vim
 !/.gitmodules
 !/.vim
+!/.vim/autoload
+!/.vim/autoload/**
 !/.vim/bundle
 !/.vim/bundle/base16-vim
 !/.vim/bundle/base16-vim/**
