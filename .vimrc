@@ -28,9 +28,4 @@ set cursorline
 " basic settings
 set hidden
 
-" set colorscheme
-set background=dark
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-grayscale
-
 set noshowmode  " we get current mode from airline
