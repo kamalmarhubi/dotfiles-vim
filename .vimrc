@@ -3,9 +3,6 @@
 " be iMproved 
 set nocompatible
 
-syntax on
-filetype plugin indent on
-
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -15,6 +12,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ciaranm/detectindent'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
@@ -28,7 +26,6 @@ set cursorline
 
 " basic settings
 set hidden
-set backspace=indent,eol,start
 
 " detectindent defaults
 let g:detectindent_preferred_expandtab = 1
@@ -86,5 +83,3 @@ let g:UltiSnipsEditSplit="horizontal"
 
 " gundo mapping
 nnoremap <F5> :GundoToggle<CR>
-
-set laststatus=2
