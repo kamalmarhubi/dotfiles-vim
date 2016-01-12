@@ -34,6 +34,20 @@ if has('nvim')
    set ttimeoutlen=0
 endif
 
+" Set up window navigation mappings
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+
+" Make them work in neovim's terminal as well
+if has('nvim')
+    tnoremap <A-h> <C-\><C-n><C-w>h
+    tnoremap <A-j> <C-\><C-n><C-w>j
+    tnoremap <A-k> <C-\><C-n><C-w>k
+    tnoremap <A-l> <C-\><C-n><C-w>l
+endif
+
 " Disable cursor blink in gui
 set guicursor+=a:blinkon0
 
