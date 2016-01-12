@@ -30,8 +30,8 @@ let g:ycm_rust_src_path = '/usr/local/src/rustc-1.5.0/src'
 
 " Something someting neovim libtermkeys escape as alt
 if has('nvim')
-   set ttimeout
-   set ttimeoutlen=0
+    set ttimeout
+    set ttimeoutlen=0
 endif
 
 " Set up window navigation mappings
