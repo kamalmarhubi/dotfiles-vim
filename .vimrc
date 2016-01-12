@@ -25,6 +25,12 @@ Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'd
 
 call plug#end()
 
+" Something someting neovim libtermkeys escape as alt
+if has('nvim')
+   set ttimeout
+   set ttimeoutlen=0
+endif
+
 " Disable cursor blink in gui
 set guicursor+=a:blinkon0
 
