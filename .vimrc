@@ -1,7 +1,11 @@
 " .vimrc
 
-" be iMproved 
+" Be iMproved
 set nocompatible
+
+" Basic settings
+set hidden
+set noshowmode  " We get current mode from airline
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
@@ -21,13 +25,8 @@ Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'd
 
 call plug#end()
 
-" disable cursor blink in gui
+" Disable cursor blink in gui
 set guicursor+=a:blinkon0
 
-" setup highlighting
+" Setup highlighting
 set cursorline
-
-" basic settings
-set hidden
-
-set noshowmode  " we get current mode from airline
