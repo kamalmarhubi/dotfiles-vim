@@ -48,6 +48,11 @@ if has('nvim')
     tnoremap <A-l> <C-\><C-n><C-w>l
 endif
 
+" Set fish as shell for terminal if present
+if filereadable("/usr/bin/fish")
+    set shell="/usr/bin/fish"
+endif
+
 " Disable cursor blink in gui
 set guicursor+=a:blinkon0
 
