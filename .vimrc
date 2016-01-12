@@ -25,6 +25,9 @@ Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'd
 
 call plug#end()
 
+" For YCM/racer completion
+let g:ycm_rust_src_path = '/usr/local/src/rustc-1.5.0/src'
+
 " Something someting neovim libtermkeys escape as alt
 if has('nvim')
    set ttimeout
