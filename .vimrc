@@ -43,12 +43,15 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-" Make them work in neovim's terminal as well
+" neovim specific mappings
 if has('nvim')
+    " Make window navigation mappings work in neovim's terminal as well
     tnoremap <A-h> <C-\><C-n><C-w>h
     tnoremap <A-j> <C-\><C-n><C-w>j
     tnoremap <A-k> <C-\><C-n><C-w>k
     tnoremap <A-l> <C-\><C-n><C-w>l
+
+    tnoremap <PageUp> <C-\><C-n><PageUp>
 endif
 
 " Set fish as shell for terminal if present
