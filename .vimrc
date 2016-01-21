@@ -25,6 +25,9 @@ Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'd
 
 call plug#end()
 
+" Load tpope's sensible so we can override settings.
+runtime! plugin/sensible.vim
+
 " For YCM/racer completion
 let g:ycm_rust_src_path = '/usr/local/src/rustc-1.5.0/src'
 
@@ -49,8 +52,8 @@ if has('nvim')
 endif
 
 " Set fish as shell for terminal if present
-if filereadable("/usr/bin/fish")
-    set shell="/usr/bin/fish"
+if file_readable("/usr/bin/fish")
+    set shell=/usr/bin/fish
 endif
 
 " Disable cursor blink in gui
