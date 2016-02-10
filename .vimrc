@@ -13,6 +13,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'davidzchen/vim-bazel'
+
+Plug 'google/vim-glaive'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-syncopate'
+
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
@@ -27,6 +32,12 @@ call plug#end()
 
 " Load tpope's sensible so we can override settings.
 runtime! plugin/sensible.vim
+
+" Install glaive so it can configure stuff.
+call glaive#Install()
+
+" Enable syncopate's mappings.
+Glaive syncopate plugin[mappings]
 
 " For YCM/racer completion
 let g:ycm_rust_src_path = '/usr/local/src/rustc-1.5.0/src'
