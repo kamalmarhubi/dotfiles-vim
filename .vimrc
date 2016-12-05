@@ -10,6 +10,7 @@ set noshowmode  " We get current mode from airline
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'davidzchen/vim-bazel'
@@ -27,6 +28,17 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'do': './install.py --clang-completer --gocode-completer --racer-completer' }
+Plug 'tomtom/tcomment_vim'
+
+" Fuzzy search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
+
+" Writing plugins
+Plug 'reedes/vim-pencil'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -75,3 +87,19 @@ set guicursor+=a:blinkon0
 
 " Setup highlighting
 set cursorline
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,md call pencil#init()
+augroup END
+
+" Ctrl-p: Find all git files in directory using FZF
+nmap <c-p> :GitFiles<CR>
+
+" Map space to the prefix for Unite
+nnoremap [unite] <Nop>
+nmap <space> [unite]
+
+" General fuzzy search
+nnoremap <silent> [unite]<space> :<C-u>Unite
+\ -buffer-name=files buffer file_mru bookmark file_rec/async<CR>
