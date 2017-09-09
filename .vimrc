@@ -14,6 +14,7 @@ Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'davidzchen/vim-bazel'
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 Plug 'google/vim-glaive'
 Plug 'google/vim-maktaba'
@@ -31,14 +32,8 @@ Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'd
 Plug 'tomtom/tcomment_vim'
 
 " Fuzzy search
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
-Plug 'Shougo/unite.vim'
+Plug 'Shougo/denite.nvim'
 Plug 'Shougo/neomru.vim'
-
-" Writing plugins
-Plug 'reedes/vim-pencil'
-Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -50,6 +45,10 @@ call glaive#Install()
 
 " Enable syncopate's mappings.
 Glaive syncopate plugin[mappings]
+
+" denite
+" TODO :-(
+
 
 " For YCM/racer completion
 let g:ycm_rust_src_path = '/usr/local/src/rustc-1.5.0/src'
@@ -87,19 +86,3 @@ set guicursor+=a:blinkon0
 
 " Setup highlighting
 set cursorline
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,md call pencil#init()
-augroup END
-
-" Ctrl-p: Find all git files in directory using FZF
-nmap <c-p> :GitFiles<CR>
-
-" Map space to the prefix for Unite
-nnoremap [unite] <Nop>
-nmap <space> [unite]
-
-" General fuzzy search
-nnoremap <silent> [unite]<space> :<C-u>Unite
-\ -buffer-name=files buffer file_mru bookmark file_rec/async<CR>
