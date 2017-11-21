@@ -22,6 +22,7 @@ Plug 'google/vim-glaive'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-syncopate'
 
+Plug 'jreybert/vimagit'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
