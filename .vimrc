@@ -43,6 +43,10 @@ call plug#end()
 " Load tpope's sensible so we can override settings.
 runtime! plugin/sensible.vim
 
+" Disable swapfiles and enable persistent undo
+set noswapfile
+set undofile
+
 " Install glaive so it can configure stuff.
 call glaive#Install()
 
