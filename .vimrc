@@ -25,6 +25,7 @@ Plug 'google/vim-syncopate'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
