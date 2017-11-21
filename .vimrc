@@ -6,6 +6,8 @@ set nocompatible
 " Basic settings
 set hidden
 set noshowmode  " We get current mode from airline
+set smartcase
+set ignorecase
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
