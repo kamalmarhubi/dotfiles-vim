@@ -24,6 +24,7 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'google/vim-glaive'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-syncopate'
+Plug 'google/vim-jsonnet'
 
 Plug 'jreybert/vimagit'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
