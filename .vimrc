@@ -39,6 +39,13 @@ Plug 'tpope/vim-speeddating'
 Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'do': './install.py --clang-completer --gocode-completer --racer-completer' }
 Plug 'tomtom/tcomment_vim'
 
+" Linting.
+Plug 'w0rp/ale'
+let g:ale_sign_column_always = 1
+highlight clear SignColumn
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+
 " Fuzzy search
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/neomru.vim'
