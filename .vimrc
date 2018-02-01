@@ -9,6 +9,9 @@ set noshowmode  " We get current mode from airline
 set smartcase
 set ignorecase
 
+" autosave
+au CursorHold,CursorHoldI * silent! update
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
