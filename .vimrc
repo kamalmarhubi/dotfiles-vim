@@ -33,13 +33,6 @@ Plug 'tpope/vim-speeddating'
 
 Plug 'nathangrigg/vim-beancount', { 'for': ['beancount'] }
 
-" Linting.
-Plug 'w0rp/ale'
-let g:ale_sign_column_always = 1
-highlight clear SignColumn
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
-
 " Fuzzy search
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/neomru.vim'
