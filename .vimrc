@@ -32,7 +32,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-speeddating'
 Plug 'Valloric/YouCompleteMe', { 'for': ['c', 'cpp', 'go', 'python', 'rust'], 'do': './install.py --clang-completer --gocode-completer --racer-completer' }
-Plug 'tomtom/tcomment_vim'
 
 Plug 'nathangrigg/vim-beancount', { 'for': ['beancount'] }
 
